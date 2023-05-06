@@ -18,7 +18,7 @@
 .banner-content h1 {
   font-family: 'Raleway', sans-serif;
   font-size: 30px;
-  color: #ffc107;
+  color: #F9CC48;
 }
 
 
@@ -35,9 +35,9 @@
 }
 
 
-.fa-regular {
-  font-size: 30px;
-  color: #ffc107;
+.fa-solid {
+  font-size: 50px;
+  color: #F9CC48;
   animation: moveDown 2s infinite;
   transition: transform 0.2s ease-in-out;
 }
@@ -47,13 +47,14 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(10px);
+    transform: translateY(20px);
   }
   100% {
     transform: translateY(0);
   }
 }
 
-.fa-regular:hover {
-  transform: scale(1.1);
-}
+
+// .fa-solid:hover {
+//   transform: scale(1.1);
+// }
