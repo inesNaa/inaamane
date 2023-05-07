@@ -6,3 +6,6 @@ import { application } from "./application"
 
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
+
+import TypingEffectController from "./typing_effect_controller"
+application.register("typing-effect", TypingEffectController)
