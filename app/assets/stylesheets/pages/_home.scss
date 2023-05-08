@@ -20,6 +20,8 @@ body {
   margin-bottom: -250px;
   position: relative;
   z-index: 1;
+  margin-top: 100px;
+
 
 }
 
@@ -35,7 +37,8 @@ body {
   display: flex;
   justify-content: center;
   width: 80vw;
-  background-color: white;
+
+
 
 }
 
@@ -44,6 +47,8 @@ body {
   padding: 50px;
   width: 60%;
   margin-right: 30px;
+  background-color: white;
+  border-radius: 8px;
 
 }
 
@@ -51,6 +56,20 @@ body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 50px;
   width: 140%;
+  background-color: white;
+  border-radius: 8px;
+
+
+
 
 }
 
+
+
+.autoresize {
+  height: 200px;
+  resize: none;
+}
+.autoresize:focus {
+  outline: none;
+}

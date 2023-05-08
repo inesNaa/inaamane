@@ -36,7 +36,7 @@
       <p>Numéro de téléphone : XX XX XX XX XX</p>
       <p>Adresse e-mail : adresse@domaine.com</p>
       <p>Adresse postale : XX Rue, Ville, Pays</p>
-     
+
     </div>
     <div class="contact-form">
       <%= simple_form_for :contact, url: create_contact_path do |f| %>
@@ -46,7 +46,7 @@
         <%= f.input :company, label: 'Entreprise', required: true %>
         <%= f.input :city, label: 'Ville', required: true  %>
         <%= f.input :subject, label: 'Sujet', required: true %>
-        <%= f.input :body, label: 'Message', as: :text, required: true %>
+        <%= f.input :body, label: 'Message', as: :text, required: true, input_html: { class: 'autoresize', contenteditable: true } %>
         <%= f.button :submit, 'Envoyer', class: 'btn-submit' %>
       <% end %>
     </div>
