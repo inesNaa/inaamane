@@ -7,22 +7,19 @@
   height: 90vh;
   background-color: white;
   margin-right: -90px;
-
 }
 
 
 .banner-content {
   width: 50%;
-  padding: 0 2rem;
+  padding: 0 3rem;
   margin-top: 30px;
-
-
 }
 
 
 .banner-content img {
   width: 80%;
-  // width: 550px;
+
 }
 
 
@@ -47,9 +44,10 @@
 
 
 .banner-icon {
-
   margin-right: 85px;
 }
+
+
 // .fa-solid:hover {
 //   transform: scale(1.1);
 // }
@@ -58,7 +56,6 @@
 color: #F9CC48;
 font-family: 'Maven Pro', sans-serif;
 font-size: 45px;
-
 }
 
 
@@ -73,10 +70,30 @@ font-size: 45px;
   font-family: 'Maven Pro', sans-serif;
   font-size: 18px;
   color: #5b5b5b;
+}
 
+#brand {
+  font-family: 'Maven Pro', sans-serif;
+  color: #5b5b5b;
+  font-size: 15px;
+  font-weight: bolder;
+  letter-spacing: 5.2px;
+  margin-bottom: -5px;
+  padding-left: 20px;
 
 }
 
+
+#brand1 {
+  font-family: 'Maven Pro', sans-serif;
+  color: #5b5b5b;
+  font-size: 15px;
+  font-weight: bolder;
+  letter-spacing: 5.2px;
+  padding-left: 450px;
+  margin-top: -10px;
+
+}
 // typing effect
 
 .typing-effect {
@@ -90,9 +107,9 @@ font-size: 45px;
 
 .typing-effect span:last-child {
   display: inline-block;
-  margin-left: 5px;
+  margin-left: -5px;
   width: 10px;
-  height: 42px;
+  height: 45px;
   color: #5b5b5b;
   animation: blink 1.5s infinite;
 }
@@ -102,32 +119,3 @@ font-size: 45px;
     opacity: 0;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-// #typing-effect [data-typing-effect-target="cursor"] {
-//   animation: blink 1s infinite;
-
-// }
-
-// @keyframes blink {
-//   0% {
-//     opacity: 1;
-//   }
-//   50% {
-//     opacity: 0;
-//   }
-//   100% {
-//     opacity: 1;
-//   }
-// }

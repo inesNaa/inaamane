@@ -1,5 +1,84 @@
 // Specific CSS for your home-page
 body {
-  background-color:#fdecb9;
+  background-color: white;
+  // background-image: url('');
+  // background-repeat: no-repeat;
+  // background-size: cover;
 
+}
+
+
+// contact-form
+
+// .title-contact h2{
+//   font-family: 'Maven Pro', sans-serif;
+//   font-weight: bold;
+//   font-size: 50px;
+//   text-align: center;
+//   margin-bottom: 30px;
+// }
+
+// .container-contact {
+//   display: flex;
+//   justify-content: center;
+// }
+
+// .contact-form {
+//   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+//   padding: 50px;
+//   width: 60%;
+//   margin-right: 15px;
+
+// }
+
+// .contact-infos {
+
+//   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+//   padding: 50px;
+//   width: 40%;
+//   margin-right: 30px;
+//   margin-left: 15px;
+
+// }
+
+
+
+.wrapper-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+
+
+}
+
+.title-contact h2 {
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container-contact {
+  display: flex;
+  justify-content: center;
+  width: 80vw;
+
+}
+
+.contact-infos {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 50px;
+  width: 60%;
+  margin-right: 30px;
+  margin-left: 15px;
+}
+
+.contact-form {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 50px;
+  width: 140%;
+  margin-right: 15px;
 }

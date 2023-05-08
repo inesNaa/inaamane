@@ -1,20 +1,53 @@
 <%= render "shared/banner" %>
 
-<div class="contact">
-  <h2>Collaborons</h2>
+<%# <div class="title-contact"> %>
+  <%# <h2>Collaborons</h2> %>
+<%# </div> %>
+<%# <div class="container-contact"> %>
+  <%# <div class="contact-infos"> %>
+    <%# <img src="votre_image.png" alt="Image" /> %>
+    <%# <p>Numéro de téléphone : XX XX XX XX XX</p> %>
+    <%# <p>Adresse e-mail : adresse@domaine.com</p> %>
+    <%# <p>Adresse postale : XX Rue, Ville, Pays</p> %>
+  <%# </div> %>
+  <%# <div class="contact-form"> %>
+    <%# <%= simple_form_for :contact, url: create_contact_path do |f| %>
+      <%# <%= f.input :name, label: 'Nom', required: true %>
+      <%# <%= f.input :email, label: 'Email', required: true %>
+      <%# <%= f.input :phone, label: 'Téléphone', required: true %>
+      <%# <%= f.input :company, label: 'Entreprise', required: true %>
+      <%# <%= f.input :city, label: 'Ville', required: true  %>
+      <%# <%= f.input :subject, label: 'Sujet', required: true %>
+      <%# <%= f.input :body, label: 'Message', as: :text, required: true %>
+      <%# <%= f.button :submit, 'Envoyer', class: 'btn-submit' %>
+    <%# <% end %>
+  <%# </div> %>
+
+<%# </div> %>
+
+
+<div class="wrapper-contact">
+  <div class="title-contact">
+    <h2>Collaborons</h2>
+  </div>
+  <div class="container-contact">
+    <div class="contact-infos">
+      <img src="" alt="Image" />
+      <p>Numéro de téléphone : XX XX XX XX XX</p>
+      <p>Adresse e-mail : adresse@domaine.com</p>
+      <p>Adresse postale : XX Rue, Ville, Pays</p>
+    </div>
+    <div class="contact-form">
+      <%= simple_form_for :contact, url: create_contact_path do |f| %>
+        <%= f.input :name, label: 'Nom', required: true %>
+        <%= f.input :email, label: 'Email', required: true %>
+        <%= f.input :phone, label: 'Téléphone', required: true %>
+        <%= f.input :company, label: 'Entreprise', required: true %>
+        <%= f.input :city, label: 'Ville', required: true  %>
+        <%= f.input :subject, label: 'Sujet', required: true %>
+        <%= f.input :body, label: 'Message', as: :text, required: true %>
+        <%= f.button :submit, 'Envoyer', class: 'btn-submit' %>
+      <% end %>
+    </div>
+  </div>
 </div>
-<div class="form">
-  <%= simple_form_for :contact, url: create_contact_path do |f| %>
-    <%= f.input :name, label: 'Nom', required: true, wrapper_html: { class: 'form-row' } %>
-    <%= f.input :email, label: 'Email', required: true, wrapper_html: { class: 'form-row' } %>
-    <%= f.input :phone, label: 'Téléphone', required: true, wrapper_html: { class: 'form-row' } %>
-    <%= f.input :company, label: 'Entreprise', required: true, wrapper_html: { class: 'form-row' } %>
-    <%= f.input :city, label: 'Ville', required: true, wrapper_html: { class: 'form-row' } %>
-    <%= f.input :subject, label: 'Sujet', required: true, wrapper_html: { class: 'form-row' } %>
-    <%= f.input :body, label: 'Message', as: :text, required: true, wrapper_html: { class: 'form-row' } %>
-    <%= f.button :submit, 'Envoyer', class: 'btn-submit' %>
-  <% end %>
-</div>
- <p data-controller="typing-effect" data-typing-effect-words-value='["sites internet", "web app"]'>
-  Je crée des <span data-typing-effect-target="word"></span><span data-typing-effect-target="cursor">|</span>
-  </p>
