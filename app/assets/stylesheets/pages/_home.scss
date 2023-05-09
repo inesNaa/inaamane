@@ -10,8 +10,6 @@ body {
 
 // contact-form
 
-
-
 .wrapper-contact {
   display: flex;
   flex-direction: column;
@@ -20,9 +18,7 @@ body {
   margin-bottom: -250px;
   position: relative;
   z-index: 1;
-  margin-top: 100px;
-
-
+  width: 100vw;
 }
 
 .title-contact h2 {
@@ -36,40 +32,135 @@ body {
 .container-contact {
   display: flex;
   justify-content: center;
-  width: 80vw;
-
-
-
+  margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 .contact-infos {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  padding: 50px;
-  width: 60%;
+  padding: 20px;
   margin-right: 30px;
   background-color: white;
-  border-radius: 8px;
+  border-radius: 10px;
+  width: 40%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  text-align: justify;
+  flex: 1;
+}
+
+
+.image-container {
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.image-container img {
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+
+.image-container:hover img {
+  transform: scale(1.1);
+}
+
+
+.contact-details {
+  margin-top: 20px;
+  text-align: left;
+  padding: 0 10px 0 0;
+}
+
+.contact-details h3 {
+font-family: 'Maven Pro', sans-serif;
+font-size: 30px;
+letter-spacing: 3px;
+text-shadow: 0 0 5px white;
+}
+
+
+.contact-details p {
+  margin-bottom: 10px;
+}
+
+.infos {
+  margin-top: 20px;
+}
+
+.infos h4 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.infos p {
+  font-size: 14px;
+  letter-spacing: 2px;
 
 }
+
+.infos p:hover {
+  color: #F9CC48;
+
+}
+
 
 .contact-form {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  padding: 50px;
-  width: 140%;
+  padding: 40px;
   background-color: white;
-  border-radius: 8px;
-
-
-
+  border-radius: 10px;
+  width: 60%;
+  flex: 1;
 
 }
 
-
-
-.autoresize {
+#autoresize {
   height: 200px;
   resize: none;
 }
+
 .autoresize:focus {
   outline: none;
+}
+
+.input-row{
+  border: 2px solid transparent;
+  border-radius: 8px;
+}
+
+.input-row:hover {
+border: 2px solid #F9CC48;
+border-radius: 8px;
+
+}
+
+label{
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 3px;
+}
+
+.btn-submit {
+  background: white;
+  border-radius: 10px;
+  color: #F9CC48;
+  font-weight: bold;
+  width: 100%;
+  border: 1px solid #F9CC48;
+  padding: 10px;
+
+}
+
+.btn-submit:hover {
+background: #F9CC48;
+border-radius: 10px;
+color: #fff;
+font-weight: bold;
+width: 100%;
+
 }

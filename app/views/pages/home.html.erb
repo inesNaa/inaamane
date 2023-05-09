@@ -32,23 +32,45 @@
   </div>
   <div class="container-contact">
     <div class="contact-infos">
-      <img src="" alt="Image" />
-      <p>Numéro de téléphone : XX XX XX XX XX</p>
-      <p>Adresse e-mail : adresse@domaine.com</p>
-      <p>Adresse postale : XX Rue, Ville, Pays</p>
+      <div class="image-container">
+        <img src="https://images.unsplash.com/photo-1581291519195-ef11498d1cf2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjN8fHNlcnJhZ2UlMjBkZSUyMG1haW5zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Image" />
+      </div>
+      <div class="contact-details">
+        <h3>Ines Naamane</h3>
 
+        <div class="infos">
+          <h4>Téléphone</h4>
+          <p> 07 62 23 12 45</p>
+        </div>
+
+        <div class="infos">
+          <h4>Email</h4>
+          <p>i.naamane@gmail.com</p>
+        </div>
+
+        <div class="infos">
+          <h4>Adresse</h4>
+          <p>71 Rue Pierre Joseph Proud'hon, La Seyne Sur Mer, France</p>
+        </div>
+
+      </div>
     </div>
     <div class="contact-form">
       <%= simple_form_for :contact, url: create_contact_path do |f| %>
-        <%= f.input :name, label: 'Nom', required: true %>
-        <%= f.input :email, label: 'Email', required: true %>
-        <%= f.input :phone, label: 'Téléphone', required: true %>
-        <%= f.input :company, label: 'Entreprise', required: true %>
-        <%= f.input :city, label: 'Ville', required: true  %>
-        <%= f.input :subject, label: 'Sujet', required: true %>
-        <%= f.input :body, label: 'Message', as: :text, required: true, input_html: { class: 'autoresize', contenteditable: true } %>
-        <%= f.button :submit, 'Envoyer', class: 'btn-submit' %>
+        <%= f.input :name, label: 'Nom', required: false, input_html: { class: 'input-row' }  %>
+        <%= f.input :email, label: 'Email', required: false, input_html: { class: 'input-row' }  %>
+        <%= f.input :phone, label: 'Téléphone', required: false, input_html: { class: 'input-row' }  %>
+        <%= f.input :subject, label: 'Sujet', required: false, input_html: { class: 'input-row' }  %>
+        <%= f.input :body, label: 'Message', as: :text, required: false, input_html: { id: 'autoresize', contenteditable: true, class: 'input-row' } %>
+        <%= button_tag type: 'submit', class: 'btn-submit' do %>
+          Envoyer <i class="fas fa-arrow-right"></i>
+        <% end %>
       <% end %>
     </div>
   </div>
 </div>
+
+
+
+
+<%# <%= f.button :submit, 'Envoyer', class: 'btn-submit' %>
